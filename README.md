@@ -1,4 +1,4 @@
-# IBTIKAR Code Conventions
+# IBTIKAR[\*](https://ibtikar1.odoo.com/) Code Conventions
 
 **Ibtikar** is a company that specializes in development using the MERN stack, which includes MongoDB, Express, React, and Node.js, as well as React-Native for mobile development. When working with these technologies, it's essential to follow consistent code conventions for better code readability and maintainability.
 
@@ -85,12 +85,12 @@ When naming database variables, it's a good practice to use **camelCase names** 
 - MongoDB
 - Express.js
 
-## Recomened VSCode Extensions
+## Recommened VSCode Extensions
 
-- Prettier
-- ESLint
-- Tailwind CSS IntelliSense
-- I18n Ally
+- Prettier [Search for esbenp.prettier-vscode on Google](https://www.google.com/search?q=esbenp.prettier-vscode)
+- ESLint [Search for dbaeumer.vscode-eslint on Google](https://www.google.com/search?q=dbaeumer.vscode-eslint)
+- Tailwind CSS IntelliSense [Search for bradlc.vscode-tailwindcss on Google](https://www.google.com/search?q=bradlc.vscode-tailwindcss)
+- I18n Ally [Search for lokalise.i18n-ally on Google](https://www.google.com/search?q=lokalise.i18n-ally)
 
 # Libraries (recommended)
 

@@ -63,6 +63,7 @@ When naming database variables, it's a good practice to use **camelCase names** 
 ## Web
 
 - React/Next.js
+- Next Auth
 - Typescript
 - MongoDB
 - TailwindCSS
@@ -83,5 +84,30 @@ When naming database variables, it's a good practice to use **camelCase names** 
 - Typescript
 - MongoDB
 - Express.js
+
+## Recomened VSCode Extensions
+
+- Prettier
+- ESLint
+- Tailwind CSS IntelliSense
+- I18n Ally
+
+# Libraries (recommended)
+
+## Web
+
+- Axios
+- React-Query
+- React-Hook-Form
+- yup
+- react-table
+- zustand (If needed)
+
+## Mobile
+
+- Axios
+- React navigation
+- React paper (for UI and theming)
+- zustand (If needed)
 
 Adhering to these code conventions will not only make your codebase more organized but also facilitate collaboration among team members. It will also ease the process of maintaining and extending your code in the future.

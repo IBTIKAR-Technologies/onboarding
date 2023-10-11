@@ -1,4 +1,4 @@
-# IBTIKAR[\*](https://ibtikar1.odoo.com/) Code Conventions
+# IBTIKAR[\*](https://ibtikar-tech.com/) Code Conventions
 
 **Ibtikar** is a company that specializes in development using the MERN stack, which includes MongoDB, Express, React, and Node.js, as well as React-Native for mobile development. When working with these technologies, it's essential to follow consistent code conventions for better code readability and maintainability.
 
@@ -36,7 +36,9 @@ When naming collections or arrays, it's a good practice to use **lowercase names
 
 - `users` (for an array of user objects)
 - `products` (for a list of product data)
-- `usersCollection` is not recommended
+- `usersCollection` bad naming
+- `users_collection` bad naming
+- `Users` bad naming
 
 ## ALL UPPERCASE in constants
 
@@ -109,5 +111,82 @@ When naming database variables, it's a good practice to use **camelCase names** 
 - React navigation
 - React paper (for UI and theming)
 - zustand (If needed)
+
+## React best practices
+
+- Use functional components
+- Use hooks:
+
+  ```
+      // useMemo
+
+      // instead of
+      const value = props.a + props.b;
+
+      // use
+      const value = useMemo(() => props.a + props.b, [props.a, props.b]);
+
+      //useCallback
+
+      //instead of
+      const handleSomething = () => {
+
+      // do something
+
+      }
+
+      //use
+      const handleSomething = useCallback(() => {
+
+      // do something
+
+      }, []);
+  ```
+
+- Component should be as small as possible
+- Minimize the use of useState:
+
+  ```
+      //instead of
+      const [value, setValue] = useState(0);
+
+      //use if no need for rerendering
+      const value = useRef(0);
+
+      //instead of
+      const [value, setValue] = useState(0);
+      const [otherValue, setOtherValue] = useState(0);
+      const [thirdValue, setThirdValue] = useState(0);
+
+      //use especially if you have many states
+      const [state, setState] = useState({
+          value: 0,
+          otherValue: 0,
+          thirdValue: 0
+      });
+  ```
+
+- Use typescript for all props(for reusability):
+
+  ```
+      //instead of
+      const Component = (props) => {
+
+      // do something
+
+      }
+
+      //use
+      interface Props {
+          a: number;
+          b: number;
+      }
+
+      const Component = (props: Props) => {
+
+      // do something
+
+      }
+  ```
 
 Adhering to these code conventions will not only make your codebase more organized but also facilitate collaboration among team members. It will also ease the process of maintaining and extending your code in the future.
